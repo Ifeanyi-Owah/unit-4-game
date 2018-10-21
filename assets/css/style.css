@@ -1,0 +1,114 @@
+*{
+  box-sizing: inherit;  
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url('../images/polaroid_@2X.png');
+    box-sizing: border-box
+}
+
+/* Game header styles */
+
+.header__title{
+    font-size: 4rem;
+    background: #cb6f34;
+    color: #F8F8F8;
+    height: 10rem;
+    width: 34rem;
+    padding: 2.8rem 0;
+    text-align: center;
+    margin: 1rem;
+    font-weight: 900;
+}
+
+.section__game--instructions {
+    background: #fbe6cf;
+    color: #8b9b72;
+    word-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+    width: 57rem;
+    height: 50rem;
+    padding:1.5rem 0 0 1.5rem; 
+    margin-left: 1rem;
+}
+
+.section__game--instructions  p {
+    margin-bottom: 3rem;
+}
+
+.section__game {
+    display: flex;
+}
+
+.section__game--randomnumber {
+    background:#5bc987;
+    height: 15rem;
+    width: 25rem;
+    margin:1rem 0 1rem 1rem;
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 0.5rem 0 0 0.3rem;
+}
+
+h2 {
+    color: #666666;
+}
+
+.section__game--outcome {
+    height: 15rem;
+    width: 13rem;
+    background: #6dfaf9;
+    margin:1rem 0 1rem 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.section__game--outcome p {
+    padding: 2rem;
+    color: #666666;
+}
+
+.section__gems {
+    display: flex
+}
+
+.section__gems--red,
+.section__gems--blue,
+.section__gems--purple,
+.section__gems--green{
+    margin: 1rem;
+    background: #F8F8F8;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.section__score--discription {
+    background: #46a397;
+    color: #F8F8F8;
+    width: 30rem;
+    margin:1rem 0 1rem 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0.5rem 0 0.3rem;
+}
+
+.section__score--display {
+    background: #46a397;
+    height: 15rem;
+    width: 30rem;
+    margin:1rem 0 1rem 1rem;
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 0.5rem 0 0 0.3rem;
+    color:#F8F8F8;
+}
+

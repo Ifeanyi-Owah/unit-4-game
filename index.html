@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  </head>
+  <body>
+      <header>
+          <h1 class="header__title">CrystalsCollectors!</h1>
+      </header>
+      <main>
+          <section class="section__game--instructions">
+              <p>You will be given a random number at the start of the game.</p>
+              <p>There are four crystals below. By clicking on a crystal you will 
+                  add a specific amount of points
+                  to your total score.
+              </p>
+              <p>You win the game by matching your total score to the random number
+                  , you loose the game if your total score goes above the random 
+                  number.
+              </p>
+              <p>The value of each crystal is hidden from you until you
+                  click on it.
+              </p>
+              <p>Each time when the game starts, the game will change the value
+                  of each crystal.
+              </p>
+          </section>
+          <section class="section__game">
+               <div class="section__game--randomnumber">
+                  <h2 class="section__game--randomnumberDisplay">39</h2>
+               </div>
+               <div class="section__game--outcome">
+                   <p>Win: <span class="section__game--outcomeWin">0</span></p>
+                   <p>Loose: <span class="section__game--outcomeLoose">0</span></p>
+               </div>
+          </section>
+          <section class="section__gems">
+              <div class="section__gems--red">
+                  <img src="assets/images/red.png" alt="red gem stone">
+              </div>
+              <div class="section__gems--blue"> 
+                  <img src="assets/images/blue.png" alt="blue gem stone">
+              </div>
+              <div class="section__gems--purple">
+                    <img src="assets/images/purple.png" alt="purple gem stone">
+              </div>
+              <div class="section__gems--green">
+                    <img src="assets/images/green.png" alt="green gem stone">
+              </div>
+          </section>
+          <section class="section__score">
+              <div class="section__score--discription">
+                    <p>Your total score is:</p>
+              </div>
+              <div class="section__score--display">
+                    <p class="section__score--displayKeeper">0</p>
+              </div>
+          </section>
+      </main>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js">
+</script>
+  </body>
+</html> 
+  </body>
