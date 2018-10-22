@@ -22,6 +22,7 @@ let winDisplay = $(".section__game--outcomeWin");
 let loose = 0;
 let looseDisplay = $(".section__game--outcomeLoose");
 let scoreKeeper = $(".section__score--displayKeeper");
+let winloose = $("#winloose");
 
 $(document).ready(function(){
     // red gem event handler
@@ -52,16 +53,27 @@ let gameChecker = ()=>{
         if(randomNumber===totalScore){
             win++; 
             winDisplay.text(win); 
+            winloose.text("You win!!!");
+            Math.floor((Math.random() * 120) + 18);
             randomNumber = Math.floor((Math.random() * 120) + 18);
+            randomNumberDisplay.text(randomNumber);
             totalScore = 0;
             scoreKeeper.text(totalScore);
         }else if(totalScore > randomNumber){
             loose++;
             looseDisplay.text(loose);
+            winloose.text("You loose!!!");
+            Math.floor((Math.random() * 120) + 18);
             randomNumber = Math.floor((Math.random() * 120) + 18);
+            randomNumberDisplay.text(randomNumber);
             totalScore = 0;
             scoreKeeper.text(totalScore);
         }
 };
+
+let randomNumberGen = ()=>{
+    let gemRandomNum = Math.floor((Math.random() * 120) + 18);
+    return gemRandomNum;
+}
 
 
