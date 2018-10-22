@@ -8,6 +8,7 @@
 // if the total generated number is equal to the random generated number, you win
 // increase the value of win by 1
 // on refresh, reset the game
+// add comment
 
 // randomly generated number
 let randomNumber = Math.floor((Math.random() * 120) + 18);
